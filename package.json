@@ -4,7 +4,7 @@
 	"description": "Support for the scam programming language",
 	"publisher": "ditto-pkgs",
 	"repository": {"url": "https://github.com/nicholascioli/scam-highlight.git" },
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.31.0"
     },
