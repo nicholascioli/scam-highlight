@@ -1,0 +1,27 @@
+{
+    "name": "scam-highlight",
+    "displayName": "Scam Syntax Highlighting",
+	"description": "Support for the scam programming language",
+	"publisher": "ditto-pkgs",
+	"repository": {"url": "https://github.com/nicholascioli/scam-highlight.git" },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scm",
+            "aliases": ["Scam", "scm"],
+            "extensions": [".scm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scm",
+            "scopeName": "source.scm",
+            "path": "./syntaxes/scm.tmLanguage.json"
+        }]
+    }
+}
