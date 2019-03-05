@@ -60,6 +60,11 @@ In order to change the theming of the syntax highlighting, change the following 
 
 Change log for this extension:
 
+### 0.0.4
+
+- Added support for exponential functions (`sqrt`, `expt`)
+- Updated example screenshot
+
 ### 0.0.3
 
 - Updated README

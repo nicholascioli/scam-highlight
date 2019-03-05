@@ -3,6 +3,13 @@ All notable changes to the "scm" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.4] - 2019-03-05
+### Added
+- Support for exponential functions (`sqrt`, `expt`)
+
+### Changed
+- Updated th example image
+
 ## [0.0.3] - 2019-03-05
 ### Added
 - Support for the `^` operator (power)
