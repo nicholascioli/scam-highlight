@@ -25,7 +25,7 @@ In order to change the theming of the syntax highlighting, change the following 
 	- comment.block.scm
 	- comment.line.scm
 - Language Constants:
-	- constant.language.scm
+	- constant.language.scm (scamArgs)
 - Functions:
 	- storage.type.function.scm (for the opening `define` for functions)
 	- entity.name.function.scm (for the actual function name)
@@ -36,7 +36,8 @@ In order to change the theming of the syntax highlighting, change the following 
 - Numbers
 	- constant.numeric.scm
 - Operators
-	- keyword.operator.arithmetic.scm (+, -, *, /, %)
+	- keyword.operator.arithmetic.scm (+, -, *, /, %, ^)
+	- storage.type (for operators dealing with converting types such as int and real)
 - Enclosing Parenthesis
 	- punctuation.paren.opens.scm
 	- punctuation.paren.close.scm
@@ -46,17 +47,25 @@ In order to change the theming of the syntax highlighting, change the following 
 - Symbols (accessors)
 	- support.type.property-name
 - Variables
-	- storage.type.scm (for the opening `define` for variables)
+	- storage.type.variable.scm (for the opening `define` for variables)
 	- variable.name.scm (for the actual variable name)
 
 
 ## Known Issues
 
-Function names will only be recognized when placed immediately beside a `(`.
+- Function names will only be recognized when placed immediately beside a `(`.
+- Unmatched operators placed right next to each other will show up as separate operators.
 
 ## Release Notes
 
 Change log for this extension:
+
+### 0.0.3
+
+- Updated README
+- Added support for more built-in operators (`=`, `^`, `abs`, `eval`, `readExpr`)
+- Added support for storage types (int, real)
+- Changed variable defines to use `storage.type.variable.scm`
 
 ### 0.0.2
 
